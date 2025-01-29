@@ -6,8 +6,141 @@
         <title>Justice Legal Solutions</title>
         <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css">
         <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,800;1,800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+        <style>
+            .eb-garamond {
+                font-family: "EB Garamond", serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: normal;
+            }
+            .poppins {
+                font-family: "Poppins", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+        </style>
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    'custom-gold': '#B68C5A',
+                    'custom-gray':'#707070',
+                  }
+                }
+              }
+            }
+        </script>
     </head>
-    <body>
-        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, blanditiis?</h1>
+    <body class="poppins">
+        <header class="container max-w-6xl px-4 mx-auto lg:px-0">
+            <div class="flex justify-between py-5 lg:hidden">
+                <div class="navbar-start">
+                    <a href="">
+                        <img src="images/logo2.png" alt="">
+                    </a>
+                </div>
+                <div class="dropdown">
+                    <div class="drawer lg:hidden">
+                        <input id="my-drawer" type="checkbox" class="drawer-toggle">
+                        <div class="drawer-content">
+                            <!-- Page content here -->
+                            <label for="my-drawer" class="drawer-button">
+                                <div
+                                    tabindex="0"
+                                    id="my-drawer"
+                                    role="button"
+                                    class="bg-orange-100 btn btn-ghost lg:hidden"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="w-5 h-5"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M4 6h16M4 12h8m-8 6h16"
+                                        />
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="drawer-side">
+                            <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+                            <ul class="min-h-full p-4 text-base menu bg-base-200 text-base-content w-80">
+                                <!-- Sidebar content here -->
+                                <li>
+                                    <a>Home</a>
+                                </li>
+                                <li>
+                                    <a>Services</a>
+                                </li>
+                                <li>
+                                    <a href="">Cases</a>
+                                </li>
+                                <li>
+                                    <a href="">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden lg:block">
+                <div class="navbar bg-base-100">
+                    <div class="navbar-start">
+                        <a href="">
+                            <img src="images/logo2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="hidden py-10 navbar-center lg:flex">
+                        <div class="text-sm breadcrumbs">
+                            <ul class="text-base text-custom-gray">
+                                <li>
+                                    <a>Home</a>
+                                </li>
+                                <li>
+                                    <a>Services</a>
+                                </li>
+                                <li>
+                                    <a href="">Cases</a>
+                                </li>
+                                <li>
+                                    <a href="">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="navbar-end">
+                        <a class="px-2 py-4 text-white rounded-lg lg:px-8 bg-custom-gold">Free Consultation</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[url('images/banner.png')] bg-cover bg-center w-full rounded-lg py-28 text-white text-center">
+                <div class="max-w-full px-4 mx-auto lg:max-w-2xl lg:px-0">
+                    <h1 class="mb-6 text-3xl eb-garamond lg:text-7xl">We Provide Effective Legal Solutions</h1>
+                    <p class="mb-7">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <form action="" class="flex justify-center gap-7">
+                        <input class="p-5 rounded-lg basis-3/4" type="text" placeholder="Search your services">
+                        <button class="px-2 py-4 text-white rounded-lg lg:px-8 bg-custom-gold basis-1/4">Search</button>
+                    </form>
+                </div>
+            </div>
+        </header>
     </body>
 </html>
